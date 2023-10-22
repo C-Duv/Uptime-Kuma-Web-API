@@ -19,7 +19,7 @@ from routers import (
 from config import settings as app_settings, logger
 from app_setup import initialize_app
 
-app = FastAPI(title=app_settings.PROJECT_NAME)
+app = FastAPI(title=app_settings.PROJECT_NAME, root_path=app_settings.API_PREFIX_PATH)
 app.router.redirect_slashes = True
 
 app.include_router(user.router, prefix="/users", tags=["Users"])

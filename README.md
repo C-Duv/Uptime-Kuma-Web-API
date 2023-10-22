@@ -28,6 +28,7 @@ Additional configuration variables available
 
     ACCESS_TOKEN_EXPIRATION: Minutes the access token should be valid. Defaults to 8 days.
     SECRET_KEY: A secret value to encode JWTs with
+    API_PREFIX_PATH: The path to prefix all assets/URLs/resources with (if not set or empty, paths will starts with `/`)
 
 #### Note:
 

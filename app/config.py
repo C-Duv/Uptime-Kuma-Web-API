@@ -24,6 +24,8 @@ class Settings(BaseSettings):
 
     ADMIN_PASSWORD: str = os.environ.get("ADMIN_PASSWORD")
 
+    API_PREFIX_PATH: str = os.environ.get("API_PREFIX_PATH", "")
+
     class Config:
         case_sensitive = True
         env_file = ".env"
